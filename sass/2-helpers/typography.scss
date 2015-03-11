@@ -27,7 +27,7 @@ body {
 
 // Body Typography
 body {
-  color: $black-coconut;
+  color: $main;
   font-family: $body-font-family;
   @include MQ(M) {
    font-size: 75%;
@@ -35,9 +35,9 @@ body {
 }
 
 a{
-  color: $key-west;
+  color: $hover;
   &:hover{
-    color: $blueberry;
+    color: darken($hover, 10);
   }
 }
 
@@ -57,15 +57,15 @@ h4,
 h5,
 h6 {
   margin: ($paragraph-margin + 0.15em) 0 ($paragraph-margin - 0.35em) 0;
-  color: $black-coconut;
+  color: $main;
   font-family: $headings-font-family;
   line-height: $base-line-height;
   a{
     text-decoration: none;
-    color: $key-west;
+    color: $hover;
     border-bottom: none;
     &:hover{
-      color: $blueberry;
+      color: $hover(darken, 10);
     }
   }
 }
