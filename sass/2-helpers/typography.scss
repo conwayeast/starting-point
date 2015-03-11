@@ -1,0 +1,129 @@
+//*****************************************
+//
+// TYPOGRAPHY
+// taken from https://github.com/lchamb/typography/blob/master/scss/_typography.scss
+//
+//*****************************************
+
+$base-font-size         :   100% !default;
+$base-line-height       :   120% !default;
+$em-base                :   18px !default;
+
+$paragraph-margin       :   0.8em;
+
+$serif-font-family      :   'newslabregular', georgia, serif;
+$sans-serif-font-family :   'source-sans-pro', helvetica, arial, sans-serif;
+$meditech               :   arial;
+
+$headings-font-family   :   $serif-font-family;
+$body-font-family       :   $sans-serif-font-family;
+
+html,
+body {
+  font-size: 100%;
+  // prevents ios safari from zooming on orientation change (maybe)
+  // -webkit-text-size-adjust: none;
+}
+
+// Body Typography
+body {
+  color: $black-coconut;
+  font-family: $body-font-family;
+  @include MQ(M) {
+   font-size: 75%;
+  }
+}
+
+a{
+  color: $key-west;
+  &:hover{
+    color: $blueberry;
+  }
+}
+
+// add icon after all a tags that open new window
+a[target="_blank"]:after{
+  content: " \f08e";
+  font-family: 'FontAwesome';
+  font-size: 0.75em;
+  padding: 0em 0.5em;
+}
+
+// General Heading Styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: ($paragraph-margin + 0.15em) 0 ($paragraph-margin - 0.35em) 0;
+  color: $black-coconut;
+  font-family: $headings-font-family;
+  line-height: $base-line-height;
+  a{
+    text-decoration: none;
+    color: $key-west;
+    border-bottom: none;
+    &:hover{
+      color: $blueberry;
+    }
+  }
+}
+
+// Typographic Scale For Headings
+h1,
+.header-one {
+  font-size:$base-font-size*2.25;
+}
+
+h2,
+.header-two {
+  font-size:$base-font-size*2;
+}
+
+h3,
+.header-three {
+  font-size:$base-font-size*1.75;
+}
+
+h4,
+.header-four {
+  font-size:$base-font-size*1.5;
+}
+
+h5,
+h6,
+.header-five {
+  font-size:$base-font-size*1.25;
+}
+
+// Paragraph Text
+p {
+  margin: 0 0 $paragraph-margin;
+  font-family: inherit;
+  font-size: 1.15em;
+  font-weight: normal;
+  line-height: $base-line-height;
+}
+
+// List Style Types
+ul,
+ol {
+  li {
+    line-height: $base-line-height;
+    font-size: 1.15em;
+  }
+}
+
+// Bold Text
+.bold{
+  font-weight: bold;
+}
+
+// Italic Text
+.italic{
+  font-style: italic;
+}
+
+
+
