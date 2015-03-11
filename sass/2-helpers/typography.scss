@@ -5,9 +5,10 @@
 //
 //*****************************************
 
+
 $base-font-size         :   100% !default;
 $base-line-height       :   120% !default;
-$em-base                :   18px !default;
+$rem-base               :   1rem;
 
 $paragraph-margin       :   0.8em;
 
@@ -21,6 +22,7 @@ $body-font-family       :   $sans-serif-font-family;
 html,
 body {
   font-size: 100%;
+  font-size: $rem-base;
   // prevents ios safari from zooming on orientation change (maybe)
   // -webkit-text-size-adjust: none;
 }
@@ -73,28 +75,28 @@ h6 {
 // Typographic Scale For Headings
 h1,
 .header-one {
-  font-size:$base-font-size*2.25;
+  font-size:$rem-base*2.25;
 }
 
 h2,
 .header-two {
-  font-size:$base-font-size*2;
+  font-size:$rem-base*2;
 }
 
 h3,
 .header-three {
-  font-size:$base-font-size*1.75;
+  font-size:$rem-base*1.75;
 }
 
 h4,
 .header-four {
-  font-size:$base-font-size*1.5;
+  font-size:$rem-base*1.5;
 }
 
 h5,
 h6,
 .header-five {
-  font-size:$base-font-size*1.25;
+  font-size:$rem-base*1.25;
 }
 
 // Paragraph Text
@@ -127,7 +129,7 @@ ol {
 
 // Site Title
 .site-title{
-  font-size:$base-font-size*3;
+  font-size:$rem-base*3;
   text-align: center;
   color: $white;
   font-family: $serif-font-family;

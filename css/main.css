@@ -576,7 +576,8 @@ $fonts: Kavoon, Wendy One, Bonbon;
 */
 html,
 body {
-  font-size: 100%; }
+  font-size: 100%;
+  font-size: 1rem; }
 
 body {
   color: #000;
@@ -625,24 +626,24 @@ h6 {
 
 h1,
 .header-one {
-  font-size: 2.25em; }
+  font-size: 2.25rem; }
 
 h2,
 .header-two {
-  font-size: 2em; }
+  font-size: 2rem; }
 
 h3,
 .header-three {
-  font-size: 1.75em; }
+  font-size: 1.75rem; }
 
 h4,
 .header-four {
-  font-size: 1.5em; }
+  font-size: 1.5rem; }
 
 h5,
 h6,
 .header-five {
-  font-size: 1.25em; }
+  font-size: 1.25rem; }
 
 p {
   margin: 0 0 0.8em;
@@ -663,7 +664,7 @@ ol li {
   font-style: italic; }
 
 .site-title {
-  font-size: 3em;
+  font-size: 3rem;
   text-align: center;
   color: #fdfdfd;
   font-family: Glegoo; }
