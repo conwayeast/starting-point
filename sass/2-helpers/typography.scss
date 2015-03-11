@@ -11,12 +11,12 @@ $em-base                :   18px !default;
 
 $paragraph-margin       :   0.8em;
 
-$serif-font-family      :   'newslabregular', georgia, serif;
-$sans-serif-font-family :   'source-sans-pro', helvetica, arial, sans-serif;
-$meditech               :   arial;
+$serif-font-family      :   Glegoo;
+$sans-serif-font-family :   Gudea;
 
 $headings-font-family   :   $serif-font-family;
 $body-font-family       :   $sans-serif-font-family;
+
 
 html,
 body {
@@ -124,6 +124,15 @@ ol {
 .italic{
   font-style: italic;
 }
+
+// Site Title
+.site-title{
+  font-size:$base-font-size*3;
+  text-align: center;
+  color: $white;
+  font-family: $serif-font-family;
+}
+
 
 
 

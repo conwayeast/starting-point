@@ -87,6 +87,17 @@
 
 //*****************************************
 //
+// COLORED BACKGROUND CONTAINERS
+//
+//*****************************************
+
+.container--blue {
+  @extend .container;
+  background-color: $blue;
+}
+
+//*****************************************
+//
 // CONTAINERS w/ ADJUSTED PADDING
 //
 //*****************************************

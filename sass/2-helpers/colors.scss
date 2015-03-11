@@ -1,5 +1,5 @@
 $black          : #000;
-$white          : #FFF;
+$white          : #fdfdfd;
 
 $main           : $black;
 
@@ -7,5 +7,9 @@ $blue           : #4183c4;
 $hover          : $blue;
 
 .white{
-  color: #fff;
+  color: #fdfdfd;
+}
+
+body{
+  background: $white;
 }
